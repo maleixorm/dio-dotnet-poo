@@ -10,11 +10,8 @@ namespace dio_dotnet_poo.Models
         private string _nome;
         public string Nome
         {
-            get
-            {
-                return _nome.ToUpper();
-            }
-            
+            get => _nome.ToUpper();
+
             set
             {
                 if (value == "")
