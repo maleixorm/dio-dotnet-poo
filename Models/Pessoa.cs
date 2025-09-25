@@ -8,6 +8,7 @@ namespace dio_dotnet_poo.Models
     public class Pessoa
     {
         private string _nome;
+        private int _idade;
         public string Nome
         {
             get => _nome.ToUpper();
@@ -21,7 +22,18 @@ namespace dio_dotnet_poo.Models
                 _nome = value;
             }
         }
-        public int Idade { get; set; }
+        public int Idade
+        {
+            get => _idade;
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("A idade não pode ser menor que zero!");
+                }
+                _idade = value;
+            }
+        }
 
         public void Apresentar() {
             Console.WriteLine($"Olá! meu nome é {Nome} e eu tenho {Idade} anos.");
