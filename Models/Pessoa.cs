@@ -7,8 +7,21 @@ namespace dio_dotnet_poo.Models
 {
     public class Pessoa
     {
+        public Pessoa()
+        {
+            
+        }
+        public Pessoa(string nome, string sobrenome, int idade)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Idade = idade;
+        }
+
         private string _nome;
+
         private int _idade;
+
         public string Nome
         {
             get => _nome;
