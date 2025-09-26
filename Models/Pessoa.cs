@@ -11,7 +11,7 @@ namespace dio_dotnet_poo.Models
         private int _idade;
         public string Nome
         {
-            get => _nome.ToUpper();
+            get => _nome;
 
             set
             {
@@ -22,6 +22,11 @@ namespace dio_dotnet_poo.Models
                 _nome = value;
             }
         }
+
+        public string Sobrenome { get; set; }
+
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
         public int Idade
         {
             get => _idade;
@@ -36,7 +41,7 @@ namespace dio_dotnet_poo.Models
         }
 
         public void Apresentar() {
-            Console.WriteLine($"Olá! meu nome é {Nome} e eu tenho {Idade} anos.");
+            Console.WriteLine($"Olá! meu nome é {NomeCompleto} e eu tenho {Idade} anos.");
         }
     }
 }
