@@ -28,6 +28,7 @@ namespace dio_dotnet_poo.Models
 
         public void ListarAlunos()
         {
+            Console.WriteLine($"Alunos do curso de: {Nome}");
             foreach (Pessoa aluno in Alunos)
             {
                 Console.WriteLine(aluno.NomeCompleto);
