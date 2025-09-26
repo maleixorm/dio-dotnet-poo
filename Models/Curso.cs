@@ -14,11 +14,16 @@ namespace dio_dotnet_poo.Models
         {
             Alunos.Add(aluno);
         }
-        
+
         public int AlunosMatriculados()
         {
             int quantidade = Alunos.Count;
             return quantidade;
+        }
+
+        public bool RemoverAluno(Pessoa aluno)
+        {
+            return Alunos.Remove(aluno);
         }
     }
 }
