@@ -1,9 +1,21 @@
 ﻿using dio_dotnet_poo.Models;
+using System.Globalization;
+
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+decimal valorMonetario = 1582.40M;
+
+Console.WriteLine($"{valorMonetario:C}");
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+
+
+
+
+
+
 
 Pessoa p1 = new Pessoa("Marcos", "Marques", 37);
-
 Pessoa p2 = new Pessoa("Leonardo", "Buta", 30);
-
 Pessoa p3 = new Pessoa("Eduardo", "Neves", 22);
 
 Curso cursoDeIngles = new Curso();
