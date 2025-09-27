@@ -31,7 +31,7 @@ namespace dio_dotnet_poo.Models
             Console.WriteLine($"Alunos do curso de: {Nome}");
             for (int i = 0; i < Alunos.Count; i++)
             {
-                string texto = "Nº: " + i + " - " + Alunos[i].NomeCompleto;
+                string texto = $"Nº: {i+1} - {Alunos[i].NomeCompleto}";
                 Console.WriteLine(texto);
             }
         }
