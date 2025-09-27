@@ -8,6 +8,10 @@ decimal valorMonetario = 1582.40M;
 Console.WriteLine($"{valorMonetario:C}");
 Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
+double porcentagem = .3421;
+
+Console.WriteLine(porcentagem.ToString("P2"));
+
 
 
 
