@@ -14,6 +14,8 @@ Console.WriteLine(porcentagem.ToString("P2"));
 
 DateTime data = DateTime.Now;
 Console.WriteLine(data);
+Console.WriteLine(data.ToShortDateString());
+Console.WriteLine(data.ToShortTimeString());
 
 
 
