@@ -12,6 +12,9 @@ double porcentagem = .3421;
 
 Console.WriteLine(porcentagem.ToString("P2"));
 
+DateTime data = DateTime.Now;
+Console.WriteLine(data);
+
 
 
 
