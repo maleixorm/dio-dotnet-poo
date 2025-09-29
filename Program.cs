@@ -1,9 +1,17 @@
 ﻿using dio_dotnet_poo.Models;
 using System.Globalization;
 
-string[] linhas = File.ReadAllLines("Files/arquivoLeitura.txt");
 
-foreach (string linha in linhas)
+
+try
 {
-    Console.WriteLine(linha);
+    string[] linhas = File.ReadAllLines("Files/arquivoLeitura.txt");
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma excessão genérica. {ex.Message}");
 }
