@@ -1,14 +1,19 @@
 ﻿using dio_dotnet_poo.Models;
 using System.Globalization;
 
-(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Marcos", "Marques", 1.67M);
+LeituraArquivo arquivo = new LeituraArquivo();
 
-ValueTuple<int, string, string, decimal> outroExemploTupla = (2, "Leonardo", "Buta", 1.80M);
+var (sucesso, linhas, quantidadeLinhas) = arquivo.LerArquivo("Files/arquivoLeitura.txt");
 
-var outroExemploTuplaCreate = Tuple.Create(3, "João", "Neves", 1.74M);
-
-
-Console.WriteLine($"Id: {tupla.Id}");
-Console.WriteLine($"Nome: {tupla.Nome}");
-Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
-Console.WriteLine($"Altura: {tupla.Altura}");
+if (sucesso)
+{
+    Console.WriteLine("Quantidade de linhas no arquivo: " + quantidadeLinhas);
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possível ler o arquivo!");
+}
