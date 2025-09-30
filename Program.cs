@@ -1,22 +1,9 @@
 ﻿using dio_dotnet_poo.Models;
 using System.Globalization;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+(int, string, string, decimal) tupla = (1, "Marcos", "Marques", 1.67M);
 
-estados.Add("SP", "São Paulo");
-estados.Add("MG", "Minas Gerais");
-estados.Add("SC", "Santa Catarina");
-estados.Add("BA", "Bahia");
-
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-
-estados.Remove("BA");
-estados["SC"] = "Florianópolis";
-
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+Console.WriteLine($"ID: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
