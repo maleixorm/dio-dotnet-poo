@@ -13,9 +13,9 @@ namespace dio_dotnet_poo.Models
             {
                 Metodo2();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("Exceção tratada!");
+                Console.WriteLine("Exceção tratada! " + ex.Message);
             }
         }
         public void Metodo2()
