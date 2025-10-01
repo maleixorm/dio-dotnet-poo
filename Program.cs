@@ -1,19 +1,18 @@
 ﻿using dio_dotnet_poo.Models;
 using System.Globalization;
 
-LeituraArquivo arquivo = new LeituraArquivo();
+int numero = 20;
+bool ehPar = false;
 
-var (sucesso, linhas, quantidadeLinhas) = arquivo.LerArquivo("Files/arquivoLeitura.txt");
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O numero {numero} é: " + (ehPar ? "par" : "ímpar") + ".");
 
-if (sucesso)
-{
-    Console.WriteLine("Quantidade de linhas no arquivo: " + quantidadeLinhas);
-    foreach (string linha in linhas)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possível ler o arquivo!");
-}
+
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"O numero {numero} é par!");
+// }
+// else
+// {
+//     Console.WriteLine($"O numero {numero} é ímpar!");
+// }
