@@ -8,5 +8,10 @@ namespace dio_dotnet_poo.Models
     public class Aluno : Pessoa
     {
         public double Nota { get; set; }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine($"Eu sou o {Nome} e minha nota é {Nota}");
+        }
     }
 }
