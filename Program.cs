@@ -2,7 +2,6 @@
 using System.Globalization;
 
 Pessoa p1 = new Pessoa("Marcos", "Marques", 37);
-
 p1.Apresentar();
 
 ContaCorrente c1 = new ContaCorrente(123, 1000);
@@ -14,6 +13,5 @@ Aluno a1 = new Aluno();
 a1.Nome = "Leonardo";
 a1.Sobrenome = "Buta";
 a1.Idade = 30;
-a1.Nota = 9;
+a1.Nota = 9.35;
 a1.Apresentar();
-Console.WriteLine($"A nota de {a1.Nome} é: {a1.Nota}");
