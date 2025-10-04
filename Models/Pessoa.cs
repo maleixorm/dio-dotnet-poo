@@ -60,7 +60,7 @@ namespace dio_dotnet_poo.Models
             }
         }
 
-        public void Apresentar() {
+        public virtual void Apresentar() {
             Console.WriteLine($"Olá! meu nome é {NomeCompleto} e eu tenho {Idade} anos.");
         }
     }
