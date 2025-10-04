@@ -15,3 +15,10 @@ a1.Sobrenome = "Buta";
 a1.Idade = 30;
 a1.Nota = 9.35;
 a1.Apresentar();
+
+Professor prof1 = new Professor();
+prof1.Nome = "Eduardo";
+prof1.Sobrenome = "Menezes";
+prof1.Idade = 48;
+prof1.Salario = 3500M;
+prof1.Apresentar();
