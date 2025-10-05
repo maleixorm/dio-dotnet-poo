@@ -10,10 +10,10 @@ namespace dio_dotnet_poo.Models
         protected decimal Saldo;
 
         public abstract void Creditar(decimal valor);
-        
+
         public void ExibirSaldo()
         {
-            Console.WriteLine($"O seu saldo é: {Saldo}");
+            Console.WriteLine($"O seu saldo é: {Saldo.ToString("C")}");
         }
     }
 }
