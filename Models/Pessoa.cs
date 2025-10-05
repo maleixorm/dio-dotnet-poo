@@ -11,6 +11,10 @@ namespace dio_dotnet_poo.Models
         {
             
         }
+        public Pessoa(string nome)
+        {
+            Nome = nome;
+        }
         public Pessoa(string nome, string sobrenome, int idade)
         {
             Nome = nome;
