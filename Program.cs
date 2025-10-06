@@ -1,10 +1,10 @@
-﻿using dio_dotnet_poo.Models;
+﻿using dio_dotnet_poo.Interfaces;
+using dio_dotnet_poo.Models;
 using System.Globalization;
 
-Corrente c1 = new Corrente();
-c1.Creditar(500);
-c1.ExibirSaldo();
+Computador c = new Computador();
+Console.WriteLine(c.ToString());
 
-Pessoa p1 = new Pessoa("Marcos");
-Aluno a1 = new Aluno("Eduardo");
-a1.Apresentar();
+ICalculadora calc = new Calculadora();
+Console.WriteLine(calc.Multiplicar(3, 9));
+Console.WriteLine(calc.Somar(2, 5));
